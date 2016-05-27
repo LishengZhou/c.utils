@@ -23,7 +23,7 @@ void map_in(int InNum, int NumLocus, int GenomArray[]){
         int TempIn = InNum;
         int TempGeno = 0;
 
-        for (int i = 0; i < NumLocus-1; i++){
+        for (int i = 0; i < NumLocus; i++){
                 if ( i != NumLocus-1){
 
                         remain = TempIn % (int)pow(3, (NumLocus-1-i));
