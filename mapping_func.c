@@ -45,3 +45,19 @@ int map_out(int GenomArray[], int NumLocus){
         }
         return sum;
 }
+
+// Example
+//int main(){
+//      int OutNum;
+//      int n = 3;
+//      int *p;
+//      p = (int*)malloc(sizeof(int)*n);
+//      p[0] = 3;
+//      p[1] = 3;
+//      p[2] = 3;
+//      OutNum = map_out(p, n);
+//      printf("%i\n", OutNum);
+//      free(p);
+//      return 0;
+//}
+
