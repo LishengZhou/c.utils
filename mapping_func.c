@@ -7,10 +7,17 @@
 
 #include "mapping_func.h"
 
-// from number to vector
+// This function will convert a number into a multi-locus genotype array (coded by 0, 1, 2 for each locus) according to the number of loci
+// base 10 (number) to base 3 (vector)
+// Genotype code:
+// 0 - homozygous with 2 common alleles
+// 1 - heterozygous with 1 common allele and 1 rare allele
+// 2 - homozygous with 2 rare alleles
 
 void map_in(int InNum, int NumLocus, int GenomArray[]){
-
+        // InNum - number you want to convert
+        // NumLocus - number of loci
+        // GenomArray[] - output array of the multi-locus genotype
 
         int remain = 0;
         int TempIn = InNum;
@@ -29,6 +36,8 @@ void map_in(int InNum, int NumLocus, int GenomArray[]){
         }
 }
 
+// This function will convert a multi-locus genotype array (coded by 0, 1, 2 for each locus) into a number according to the number of loci
+// base 3 (vector) to base 10 (number)
 int map_out(int GenomArray[], int NumLocus){
         int sum = 0;
         for (int i = 0; i < NumLocus; i++){
