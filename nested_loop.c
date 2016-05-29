@@ -1,6 +1,7 @@
 // Created by: Lisheng
 
 // This function will create nested loops with number of levels defined by the user
+// example usage: nestedLoop(cvrg, (3-1), array); // with 3-level nested for loops
 
 #include <string.h>
 #include <stdio.h>
