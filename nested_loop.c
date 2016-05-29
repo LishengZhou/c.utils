@@ -17,11 +17,6 @@ void nestedLoop ( int cvrg, int level, int* array )
 		{
 			array[level] = i;
 
-			for ( int arrayi=0; arrayi<nloci; arrayi++)
-			{
-				printf("%i,", array[arrayi]);
-			}
-
 		}
 	} else {
 		for ( int prev_i = 0; prev_i <= cvrg; prev_i++ )
